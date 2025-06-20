@@ -22,22 +22,22 @@
 #define LONG_MAX        2147483647L
 #define ULONG_MIN       0x0UL
 #define ULONG_MAX       0xffffffffUL
-#define LONG_LONG_MIN   (-9223372036854775807i64 - 1)
-#define LONG_LONG_MAX   9223372036854775807i64
-#define ULONG_LONG_MIN  0x0ui64
-#define ULONG_LONG_MAX  0xffffffffffffffffui64
-#define SCHAR_MIN       -128
-#define SCHAR_MAX       127
-#define UCHAR_MIN       0x00
-#define UCHAR_MAX       0xff
-#define SHORT_MIN       (-32768)
-#define SHORT_MAX       32767
-#define USHORT_MIN      0x00
-#define USHORT_MAX      0xffff
-#define INT_MIN         (-2147483647i - 1)
-#define INT_MAX         2147483647i
+// #define LONG_LONG_MIN   (-9223372036854775807i64 - 1)
+// #define LONG_LONG_MAX   9223372036854775807i64
+// #define ULONG_LONG_MIN  0x0ui64
+// #define ULONG_LONG_MAX  0xffffffffffffffffui64
+// #define SCHAR_MIN       -128
+// #define SCHAR_MAX       127
+// #define UCHAR_MIN       0x00
+// #define UCHAR_MAX       0xff
+// #define SHORT_MIN       (-32768)
+// #define SHORT_MAX       32767
+// #define USHORT_MIN      0x00
+// #define USHORT_MAX      0xffff
+// #define INT_MIN         (-2147483647i - 1)
+// #define INT_MAX         2147483647i
 #define UINT_MIN        0x00u
-#define UINT_MAX        0xffffffffu
+// #define UINT_MAX        0xffffffffu
 #define FLOAT_MIN       -3.402823466e+38f
 #define FLOAT_MAX       3.402823466e+38f
 #define FLOAT_MIN_POS   1.175494351e-38f
