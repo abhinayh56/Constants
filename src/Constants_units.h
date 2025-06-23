@@ -3,60 +3,71 @@
 
 // multiplicative conversion constants
 // length
-#define IN_2_M(x)      (x*0.0254)                                 // from inches to meters
-#define M_2_IN(x)      (x*39.370078740157480314960629921259843)   // from meters to inches
-#define M_2_FT(x)      (x*3.2808398950131233595800524934383202)   // from meters to feet
-#define FT_2_M(x)      (x*0.3048)                                 // from feet to meters
-/*
-meter
-thou / mil
-inch
-foot
-yard
-mile
-league
-fathom
-nautical_mile
-*/
+#define THOUGH_2_INCH(x) (x*0.001)
+#define MIL_2_INCH(x)    (x*0.001)
+#define IN_2_CM(x)       (x*2.54)
+#define IN_2_M(x)        (x*0.0254)
+#define M_2_IN(x)        (x*39.370078740157480314960629921259843)
+#define FT_2_IN(x)       (x*12.0)
+#define FT_2_M(x)        (x*0.3048)
+#define M_2_FT(x)        (x*3.2808398950131233595800524934383202)
+#define YARD_2_FT(x)     (x*3.0)
+#define YARD_2_M(x)      (x*0.9144)
+#define FT_2_YARD(x)     (x/3.0)
+#define MILE_2_FEET(x)   (x*5280)
+#define MILE_2_YARD(x)   (x*1760)
+#define MILE_2_M(x)      (x*1609.344)
+#define M_2_MILE(x)      (x/1609.344)
+#define LEAGUE_2_MILE(x) (x*3.0)
+#define LEAGUE_2_M(x)    (x*4800.0)
+#define FATHOM_2_YARD(x) (x*2.0)
+#define FATHOM_2_M(x)    (x*1.8288)
+#define NAUT_MILE_2_M(x) (x*1852.0)
 
 // mass
-/*
-kg
-pound
-lunces
-tonnes
-*/
+#define TN_2_KG(x)       (x*1000.0)
+#define LB_2_KG(x)       (x*0.45359237)
+#define KG_2_LB(x)       (x/0.45359237)
+#define LB_2_OUNCE(x)    (x*0.0625)
+#define OUNCE_2_LB(x)    (x*16.0)
+#define OUNCE_2_KG(x)    (x*0.028349523125)
+#define KG_2_OUNCE(x)    (x*35.273961949580412915675808215204)
 
 // time
-/*
-*/
-#define SEC_2_NS(x)   (x*1000000000)
-#define SEC_2_US(x)   (x*1000000)
-#define SEC_2_MS(x)   (x*1000)
-#define MS_2_SEC(x)   (x*0.001)
-#define US_2_SEC(x)   (x*0.000001)
-#define NS_2_SEC(x)   (x*0.000000001)
-#define MIN_2_SEC(x)  (x*60)
-#define HR_2_SEC(x)   (x*3600)
-#define HR_2_MIN(x)   (x*60)
-#define DAYS_2_HR(x)  (x*24)
-#define DAYS_2_MIN(x) (x*1440)
-#define DAYS_2_SEC(x) (x*86400)
-
-// current
+#define SEC_2_NS(x)      (x*1000000000.0)
+#define SEC_2_US(x)      (x*1000000.0)
+#define SEC_2_MS(x)      (x*1000.0)
+#define MS_2_SEC(x)      (x*0.001)
+#define US_2_SEC(x)      (x*0.000001)
+#define NS_2_SEC(x)      (x*0.000000001)
+#define MIN_2_SEC(x)     (x*60.0)
+#define HR_2_SEC(x)      (x*3600.0)
+#define HR_2_MIN(x)      (x*60.0)
+#define DAYS_2_HR(x)     (x*24.0)
+#define DAYS_2_MIN(x)    (x*1440.0)
+#define DAYS_2_SEC(x)    (x*86400.0)
 
 // temperature
-
-// luminous intensity
+#define C_2_F(x)         (1.8*x + 32.0)
+#define C_2_K(x)         (x + 273.15)
+#define C_2_R(x)         (0.8*x)
+#define F_2_C(x)         ((x-32.0)/1.8)
+#define F_2_K(x)         ((x-32.0)/1.8 + 273.15)
+#define F_2_R(x)         ((x-32.0)/2.25)
+#define K_2_C(x)         (x - 273.15)
+#define K_2_F(x)         (1.8*x - 459.67)
+#define K_2_R(x)         (0.8*x - 218.52)
+#define R_2_C(x)         (1.25*x)
+#define R_2_F(x)         (2.25*x + 32.0)
+#define R_2_K(x)         (1.25*x + 273.15)
 
 // angle
-#define RAD_2_DEG(x)   (x*57.295779513082322864647721871733665)   // from radians to degrees
-#define DEG_2_RAD(x)   (x*0.017453292519943295769236907684886127) // from degrees to radians
-#define RPM_2_RADPS(x) (x*0.10471975511965977461542144610932)     // from rpm to radian per second
-#define RPM_2_DEGPS(x) (x*6)                                      // from rpm to degree per second
-#define RADPS_2_RPM(x) (x*9.5492965855137201461330258023509)      // from radian per second to rpm
-#define DEGPS_2_RPM(x) (x*0.16666666666666666666666666666667)     // from degree per second to rpm
-
+#define RAD_2_DEG(x)     (x*57.295779513082322864647721871733665)   // from radians to degrees
+#define DEG_2_RAD(x)     (x*0.017453292519943295769236907684886127) // from degrees to radians
+#define RPM_2_RADPS(x)   (x*0.10471975511965977461542144610932)     // from rpm to radian per second
+#define RPM_2_DEGPS(x)   (x*6.0)                                      // from rpm to degree per second
+#define RADPS_2_RPM(x)   (x*9.5492965855137201461330258023509)      // from radian per second to rpm
+#define DEGPS_2_RPM(x)   (x*0.16666666666666666666666666666667)     // from degree per second to rpm
 
 // Decimal prefix Specific units of IEC 60027-2 A.2 and ISO/IEC 80000:13-2008
 #define QUETTA  1e30
