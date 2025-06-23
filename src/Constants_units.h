@@ -47,6 +47,7 @@
 #define DAYS_2_MIN(x)  (x * 1440.0)
 #define DAYS_2_SEC(x)  (x * 86400.0)
 
+// frequency
 #define HZ_2_SEC(x)    (1.0 / x)
 #define HZ_2_MS(x)     (1000.0 / x)
 #define HZ_2_US(x)     (1000000.0 / x)
