@@ -53,9 +53,9 @@
 #define HZ_2_US(x)     (1000000.0 / x)
 #define HZ_2_NS(x)     (1000000000.0 / x)
 #define SEC_2_HZ(x)    (1.0 / x)
-#define MS_2_HZ(x)     (1.0 / (1000.0 * x))
-#define US_2_HZ(x)     (1.0 / (1000000.0 * x))
-#define NS_2_HZ(x)     (1.0 / (1000000000.0 * x))
+#define MS_2_HZ(x)     (1000.0 / x)
+#define US_2_HZ(x)     (1000000.0 / x)
+#define NS_2_HZ(x)     (1000000000.0 / x)
 
 // temperature
 #define C_2_F(x)  (1.8 * x + 32.0)
