@@ -72,14 +72,14 @@
 #define R_2_K(x)  (1.25 * x + 273.15)
 
 // angle
-#define RAD_2_DEG(x)       (x * 57.295779513082322864647721871733665)
-#define DEG_2_RAD(x)       (x * 0.017453292519943295769236907684886127)
-#define DEG_2_MINUT(x)     (x * 60.0)
-#define DEG_2_SECOND(x)    (x * 3600.0)
-#define MINUT_2_SECOND(x)  (x * 60.0)
-#define MINUT_2_DEG(x)     (x / 60.0)
-#define SECOND_2_MINUT(x)  (x / 60.0)
-#define SECOND_2_DEG(x)    (x / 3600.0)
+#define RAD_2_DEG(x)             (x * 57.295779513082322864647721871733665)
+#define DEG_2_RAD(x)             (x * 0.017453292519943295769236907684886127)
+#define DEG_2_ARCMINUT(x)        (x * 60.0)
+#define DEG_2_ARCSECOND(x)       (x * 3600.0)
+#define ARCMINUT_2_ARCSECOND(x)  (x * 60.0)
+#define ARCMINUT_2_DEG(x)        (x / 60.0)
+#define ARCSECOND_2_ARCMINUT(x)  (x / 60.0)
+#define ARCSECOND_2_DEG(x)       (x / 3600.0)
 
 // speed
 #define RPM_2_RADPS(x)    (x * 0.10471975511965977461542144610932)
