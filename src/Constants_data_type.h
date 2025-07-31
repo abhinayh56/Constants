@@ -49,4 +49,7 @@
 #define DOUBLE_SMALL    1e-300  // a small 64-bit floating-point number
 #define DOUBLE_BIG      1e+300  // a large 64-bit floating-point number
 
+#define FLOAT_EPSILON   1.1920929e-7f
+#define DOUBLE_EPSILON  2.220446049250313e-16
+
 #endif // CONSTANTS_DATA_TYPE_H
