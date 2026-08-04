@@ -1,10 +1,11 @@
 Welcome to Lumache's documentation!
 ===================================
 
-**Lumache** (/lu'make/) is a Python library for cooks and food lovers
-that creates recipes mixing random ingredients.
-It pulls data from the `Open Food Facts database <https://world.openfoodfacts.org/>`_
-and offers a *simple* and *intuitive* API.
+**Constants** is a C++ header only library for defining and managing constants.
+
+It provides a simple and intuitive API for working with constants in C++ projects.
+
+Constants belong to different categories, including mathematical constants, physical constants, and user-defined constants.
 
 Check out the :doc:`usage` section for further information, including
 how to :ref:`installation` the project.
