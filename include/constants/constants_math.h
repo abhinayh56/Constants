@@ -1,9 +1,17 @@
+/**
+ * @file constants_math.h
+ * @brief Mathematical constants and precomputed root values.
+ *
+ * Provides commonly used values of pi, e, square roots, and cube roots.
+ */
+
 #ifndef CONSTANTS_MATH_H
 #define CONSTANTS_MATH_H
 
-// math constants
+/** @brief Precalculated values tau. */
 #define MATH_TAU       6.28318530717958647692528676655900576
 
+/** @brief Precalculated values of pi with various multiples and sub-multiples. */
 #define MATH_PI_by_10   0.31415926535897932384626433832795028
 #define MATH_PI_by_9    0.34906585039886591538473815369772254
 #define MATH_PI_by_8    0.39269908169872415480783042290993786
@@ -24,6 +32,7 @@
 #define MATH_9_PI      28.27433388230813914616379044951552595
 #define MATH_10_PI     31.41592653589793238462643383279502884
 
+/** @brief Precalculated values of e with various exponents. */
 #define MATH_e_POW_MINUS_5    0.00673794699908546700084510661099557
 #define MATH_e_POW_MINUS_4    0.01831563888873417866864912184610148
 #define MATH_e_POW_MINUS_3    0.04978706836786394446248138478949841
@@ -35,7 +44,7 @@
 #define MATH_e_POW_4         54.59815003314423620395245961844921112
 #define MATH_e_POW_5        148.41315910257659993476408999413251877
 
-// precalculated square root values
+/** @brief Precalculated square root values from 2 to 25. */
 #define MATH_SQRT_2   1.414213562373095048801688724209698
 #define MATH_SQRT_3   1.732050807568877293527446341505872
 #define MATH_SQRT_4   2.000000000000000000000000000000000
@@ -61,7 +70,7 @@
 #define MATH_SQRT_24  4.898979485566356196394568149411782
 #define MATH_SQRT_25  5.000000000000000000000000000000000
 
-// precalculated cube root values
+/** @brief Precalculated cube root values from 2 to 25. */
 #define MATH_CUBRT_2   1.259921049894873190666544360283296
 #define MATH_CUBRT_3   1.442249570307408301772511549643240
 #define MATH_CUBRT_4   1.587401051968199361397182656219229

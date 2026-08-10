@@ -1,8 +1,12 @@
+/**
+ * @file constants_units.h
+ * @brief Unit conversion macros and SI/binary prefixes.
+ */
+
 #ifndef CONSTANTS_UNITS_H
 #define CONSTANTS_UNITS_H
 
-// multiplicative conversion constants
-// length
+/** @brief Length conversion macros. */
 #define THOUGH_2_INCH(x)  (x * 0.001)
 #define MIL_2_INCH(x)     (x * 0.001)
 #define IN_2_CM(x)        (x * 2.54)
@@ -24,7 +28,7 @@
 #define FATHOM_2_M(x)     (x * 1.8288)
 #define NAUT_MILE_2_M(x)  (x * 1852.0)
 
-// mass
+/** @brief Mass conversion macros. */
 #define TN_2_KG(x)     (x * 1000.0)
 #define LB_2_KG(x)     (x * 0.45359237)
 #define KG_2_LB(x)     (x / 0.45359237)
@@ -33,7 +37,7 @@
 #define OUNCE_2_KG(x)  (x * 0.028349523125)
 #define KG_2_OUNCE(x)  (x * 35.273961949580412915675808215204)
 
-// time
+/** @brief Time conversion macros. */
 #define SEC_2_NS(x)    (x * 1000000000.0)
 #define SEC_2_US(x)    (x * 1000000.0)
 #define SEC_2_MS(x)    (x * 1000.0)
@@ -47,7 +51,7 @@
 #define DAYS_2_MIN(x)  (x * 1440.0)
 #define DAYS_2_SEC(x)  (x * 86400.0)
 
-// frequency
+/** @brief Frequency and period conversion macros. */
 #define HZ_2_SEC(x)    (1.0 / x)
 #define HZ_2_MS(x)     (1000.0 / x)
 #define HZ_2_US(x)     (1000000.0 / x)
@@ -57,7 +61,7 @@
 #define US_2_HZ(x)     (1000000.0 / x)
 #define NS_2_HZ(x)     (1000000000.0 / x)
 
-// temperature
+/** @brief Temperature conversion macros. */
 #define C_2_F(x)  (1.8 * x + 32.0)
 #define C_2_K(x)  (x + 273.15)
 #define C_2_R(x)  (0.8 * x)
@@ -71,7 +75,7 @@
 #define R_2_F(x)  (2.25 * x + 32.0)
 #define R_2_K(x)  (1.25 * x + 273.15)
 
-// angle
+/** @brief Angle conversion macros. */
 #define RAD_2_DEG(x)             (x * 57.295779513082322864647721871733665)
 #define DEG_2_RAD(x)             (x * 0.017453292519943295769236907684886127)
 #define DEG_2_ARCMINUT(x)        (x * 60.0)
@@ -81,7 +85,7 @@
 #define ARCSECOND_2_ARCMINUT(x)  (x / 60.0)
 #define ARCSECOND_2_DEG(x)       (x / 3600.0)
 
-// speed
+/** @brief Rotational speed conversion macros. */
 #define RPM_2_RADPS(x)    (x * 0.10471975511965977461542144610932)
 #define RPM_2_DEGPS(x)    (x * 6.0)
 #define RADPS_2_RPM(x)    (x * 9.5492965855137201461330258023509)
@@ -89,7 +93,7 @@
 #define DEGPS_2_RPM(x)    (x * 0.16666666666666666666666666666667)
 #define DEGPS_2_RADPS(x)  (x * 0.017453292519943295769236907684886127)
 
-// Decimal prefix Specific units of IEC 60027-2 A.2 and ISO/IEC 80000:13-2008
+/** @brief SI decimal prefixes. */
 #define QUETTA  1e30
 #define RONNA   1e27
 #define YOTTA   1e24
@@ -115,7 +119,7 @@
 #define RONTO   1e-27
 #define QUECTO  1e-30
 
-// Binary prefix Specific units of IEC 60027-2 A.2 and ISO/IEC 80000:13-2008
+/** @brief IEC binary prefixes. */
 #define KIBI  (1 << 10)
 #define MEBI  (1 << 20)
 #define GIBI  (1 << 30)

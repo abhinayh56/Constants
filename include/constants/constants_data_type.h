@@ -1,7 +1,12 @@
+/**
+ * @file constants_data_type.h
+ * @brief Minimum, maximum, range, and precision constants for data types.
+ */
+
 #ifndef CONSTANTS_DATA_TYPE_H
 #define CONSTANTS_DATA_TYPE_H
 
-// data type constants
+/** @brief Integer type limits. */
 #define INT_8_MIN       (-127i8 - 1)
 #define INT_8_MAX       127i8
 #define UINT_8_MIN      0x0ui8
@@ -38,6 +43,7 @@
 // #define INT_MIN         (-2147483647i - 1)
 // #define INT_MAX         2147483647i
 
+/** @brief Floating-point range and magnitude constants. */
 #define FLOAT_MIN       -3.402823466e+38f
 #define FLOAT_MAX       3.402823466e+38f
 #define FLOAT_MIN_POS   1.175494351e-38f
@@ -49,6 +55,7 @@
 #define DOUBLE_SMALL    1e-300  // a small 64-bit floating-point number
 #define DOUBLE_BIG      1e+300  // a large 64-bit floating-point number
 
+/** @brief Floating-point machine epsilon constants. */
 #define FLOAT_EPSILON   1.1920929e-7f
 #define DOUBLE_EPSILON  2.220446049250313e-16
 
