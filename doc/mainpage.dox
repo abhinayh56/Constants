@@ -1,0 +1,223 @@
+/**
+ * @mainpage Constants Library
+ *
+ * @section intro Introduction
+ *
+ * This library provides a collection of commonly used mathematical
+ * constants, unit-conversion macros, SI and IEC prefixes, and
+ * data-type-related constants.
+ *
+ * The library is organized into three main categories:
+ *
+ * - Mathematical constants and precomputed values.
+ * - Unit conversion and measurement prefixes.
+ * - Data type limits, ranges, and floating-point precision values.
+ *
+ *
+ * @section features Features
+ *
+ * The constants library provides:
+ *
+ * - Mathematical constants such as pi and tau.
+ * - Precomputed powers of Euler's number.
+ * - Precomputed square-root values.
+ * - Precomputed cube-root values.
+ * - Integer type minimum and maximum values.
+ * - Floating-point range and magnitude constants.
+ * - Floating-point machine epsilon values.
+ * - Length, mass, and time conversions.
+ * - Frequency and period conversions.
+ * - Temperature conversions.
+ * - Angle conversions.
+ * - Rotational speed conversions.
+ * - SI decimal prefixes.
+ * - IEC binary prefixes.
+ *
+ *
+ * @section headers Header Files
+ *
+ * The library is provided through the following headers:
+ *
+ * - @ref constants.h - Main header that includes all constant definitions.
+ * - @ref constants_math.h - Mathematical constants and precomputed values.
+ * - @ref constants_units.h - Unit conversion macros and SI/IEC prefixes.
+ * - @ref constants_data_type.h - Data type range and precision constants.
+ *
+ *
+ * @section math Mathematical Constants
+ *
+ * The mathematical constants header provides commonly used values of
+ * pi, tau, Euler's number, square roots, and cube roots.
+ *
+ * Examples include:
+ *
+ * @code{.cpp}
+ * double pi  = MATH_PI;
+ * double tau = MATH_TAU;
+ * double e   = MATH_e;
+ *
+ * double sqrt_2 = MATH_SQRT_2;
+ * double cbrt_2 = MATH_CUBRT_2;
+ * @endcode
+ *
+ * Precomputed multiples and sub-multiples of pi are also available,
+ * together with powers of Euler's number and roots from 2 through 25.
+ *
+ *
+ * @section units Unit Conversion
+ *
+ * The unit conversion header provides macros for commonly used
+ * engineering and scientific unit conversions.
+ *
+ * @subsection length Length
+ *
+ * Examples:
+ *
+ * @code{.cpp}
+ * double meters = IN_2_M(10.0);
+ * double feet   = M_2_FT(2.0);
+ * double miles  = M_2_MILE(1609.344);
+ * @endcode
+ *
+ * @subsection mass Mass
+ *
+ * Examples:
+ *
+ * @code{.cpp}
+ * double kg = LB_2_KG(10.0);
+ * double lb = KG_2_LB(5.0);
+ * @endcode
+ *
+ * @subsection time Time
+ *
+ * Examples:
+ *
+ * @code{.cpp}
+ * double ms = SEC_2_MS(2.0);
+ * double s  = MS_2_SEC(500.0);
+ * @endcode
+ *
+ * @subsection frequency Frequency and Period
+ *
+ * Examples:
+ *
+ * @code{.cpp}
+ * double period = HZ_2_SEC(100.0);
+ * double freq   = SEC_2_HZ(0.01);
+ * @endcode
+ *
+ * @subsection temperature Temperature
+ *
+ * Examples:
+ *
+ * @code{.cpp}
+ * double fahrenheit = C_2_F(25.0);
+ * double kelvin     = C_2_K(25.0);
+ * double celsius    = F_2_C(77.0);
+ * @endcode
+ *
+ * @subsection angle Angle
+ *
+ * Examples:
+ *
+ * @code{.cpp}
+ * double radians = DEG_2_RAD(90.0);
+ * double degrees = RAD_2_DEG(MATH_PI);
+ * @endcode
+ *
+ * @subsection rotational_speed Rotational Speed
+ *
+ * Examples:
+ *
+ * @code{.cpp}
+ * double radps = RPM_2_RADPS(1000.0);
+ * double rpm   = RADPS_2_RPM(10.0);
+ * @endcode
+ *
+ *
+ * @section prefixes Prefixes
+ *
+ * The library provides SI decimal prefixes ranging from @c QUETTA
+ * through @c QUECTO.
+ *
+ * Examples:
+ *
+ * @code{.cpp}
+ * double mega = MEGA;
+ * double micro = MICRO;
+ * double nano = NANO;
+ * @endcode
+ *
+ * IEC binary prefixes are also provided:
+ *
+ * @code{.cpp}
+ * auto kibi = KIBI;
+ * auto mebi = MEBI;
+ * auto gibi = GIBI;
+ * @endcode
+ *
+ *
+ * @section datatype Data Type Constants
+ *
+ * The data type constants header provides minimum and maximum values
+ * for integer types together with floating-point range and precision
+ * constants.
+ *
+ * Examples:
+ *
+ * @code{.cpp}
+ * auto int_min = INT_32_MIN;
+ * auto int_max = INT_32_MAX;
+ *
+ * double epsilon = DOUBLE_EPSILON;
+ * float  small   = FLOAT_SMALL;
+ * @endcode
+ *
+ * Floating-point constants include:
+ *
+ * - @c FLOAT_MIN
+ * - @c FLOAT_MAX
+ * - @c FLOAT_MIN_POS
+ * - @c FLOAT_SMALL
+ * - @c FLOAT_BIG
+ * - @c FLOAT_EPSILON
+ * - @c DOUBLE_MIN
+ * - @c DOUBLE_MAX
+ * - @c DOUBLE_MIN_POS
+ * - @c DOUBLE_SMALL
+ * - @c DOUBLE_BIG
+ * - @c DOUBLE_EPSILON
+ *
+ *
+ * @section usage Basic Usage
+ *
+ * The complete constants library can be included through the main
+ * header:
+ *
+ * @code{.cpp}
+ * #include "constants.h"
+ *
+ * double angle = DEG_2_RAD(90.0);
+ * double value = MATH_PI * 2.0;
+ * double time  = MS_2_SEC(100.0);
+ * @endcode
+ *
+ *
+ * @section organization Library Organization
+ *
+ * The library is divided into the following functional groups:
+ *
+ * - Mathematical constants:
+ *   @c constants_math.h
+ * - Unit conversions and prefixes:
+ *   @c constants_units.h
+ * - Data type constants:
+ *   @c constants_data_type.h
+ * - Unified library interface:
+ *   @c constants.h
+ *
+ *
+ * @section copyright Copyright
+ *
+ * Copyright (c) 2026 Abhinay Kumar
+ */
