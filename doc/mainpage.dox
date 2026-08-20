@@ -20,16 +20,16 @@
  *
  * - Mathematical constants such as pi and tau.
  * - Precomputed powers of Euler's number.
- * - Precomputed square-root values.
- * - Precomputed cube-root values.
+ * - Precomputed square-root and cube-root values.
  * - Integer type minimum and maximum values.
  * - Floating-point range and magnitude constants.
  * - Floating-point machine epsilon values.
- * - Length, mass, and time conversions.
- * - Frequency and period conversions.
- * - Temperature conversions.
- * - Angle conversions.
- * - Rotational speed conversions.
+ * - Macros for unit conversions, such as:
+ *     - Length, mass, and time
+ *     - Frequency and period
+ *     - Temperature
+ *     - Angle
+ *     - Rotational speed
  * - SI decimal prefixes.
  * - IEC binary prefixes.
  *
